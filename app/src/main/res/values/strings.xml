@@ -3,5 +3,6 @@
     <string name="title_activity_menu">MenuActivity</string>
     <string name="title_home">Home</string>
     <string name="title_notifications">Alert</string>
-
+    <string name="hint">Enter things to be reminded!</string>
+    <string name="things_bottom">Confirm</string>
 </resources>
