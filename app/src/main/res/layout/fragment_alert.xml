@@ -8,18 +8,19 @@
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
             android:orientation="vertical"
-            android:background="@color/colorBack"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorBack"
                 android:id="@+id/textView"/>
         <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorBack"
                 android:id="@+id/textView2"/>
 
         <ImageButton

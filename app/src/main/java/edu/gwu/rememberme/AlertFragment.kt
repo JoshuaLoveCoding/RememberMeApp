@@ -27,5 +27,4 @@ class AlertFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_alert, container, false)
     }
 
-
 }

@@ -5,4 +5,11 @@
     <string name="title_notifications">Alert</string>
     <string name="hint">Enter things to be reminded!</string>
     <string name="things_bottom">Confirm</string>
+    <string name="input_email">Please enter email here, such as abc@gmail.com.</string>
+    <string name="input_hint">Email is used to receive the location of the elderly.</string>
+    <string name="input_phone">Please enter phone number here, such as 12027777777.</string>
+    <string name="input_hint_phone">Phone is used to receive the call from the elderly and the location of the elderly.</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="alert_title">Remember Me</string>
 </resources>
