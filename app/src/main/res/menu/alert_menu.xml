@@ -10,10 +10,10 @@
             app:showAsAction="always"/>
 
     <item
-            android:id="@+id/email_button"
+            android:id="@+id/message_button"
             android:icon="@drawable/ic_mail_black_24dp"
-            android:title="@string/email"
-            android:onClick="emailButtonPressed"
+            android:title="@string/message"
+            android:onClick="messageButtonPressed"
             app:showAsAction="always"/>
 
 </menu>

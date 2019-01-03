@@ -17,12 +17,14 @@
                 android:inputType="textPersonName"
                 android:ems="10"
                 android:id="@+id/editText"
+                android:textSize="20dp"
                 android:hint="@string/hint"/>
         <Button
                 android:text="@string/things_bottom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/button"
+                android:textSize="20dp"
                 android:layout_gravity="center"/>
         <ListView
                 android:layout_width="match_parent"
