@@ -15,4 +15,5 @@
     <string name="alternate_phone_number">Alternate phone number: %s</string>
     <string name="phoneNumber">Phone number:</string>
     <string name="alternatePhoneNumber">Alternate phone number:</string>
+    <string name="setTime_bottom">Set Time</string>
 </resources>
