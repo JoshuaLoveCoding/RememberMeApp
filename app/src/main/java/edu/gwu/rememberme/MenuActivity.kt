@@ -13,11 +13,12 @@ import kotlinx.android.synthetic.main.dialog_face.view.*
 import android.widget.TextView
 
 
-
 class MenuActivity : AppCompatActivity() {
 
     private var homeFragment = HomeFragment()
     private var alertFragment = AlertFragment()
+//    private lateinit var persistenceManager: PersistenceManager
+//    private lateinit var remindersAdapter: RemindersAdapter
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
@@ -46,6 +47,19 @@ class MenuActivity : AppCompatActivity() {
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         setFragment(homeFragment)
+
+//        persistenceManager = PersistenceManager(this)
+//
+//        val reminderText = editTextReminder.text.toString()
+//        val reminder = Reminder(reminderText, Date())
+//        persistenceManager.saveReminder(reminder)
+//
+//        val reminders = persistenceManager.fetchReminders()
+//
+//        remindersAdapter = RemindersAdapter(reminders)
+//
+//        recycler_view.layoutManager = LinearLayoutManager(this)
+//        recycler_view.adapter = remindersAdapter
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
