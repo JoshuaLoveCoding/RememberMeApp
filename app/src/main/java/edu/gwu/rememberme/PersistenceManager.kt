@@ -10,6 +10,7 @@ import com.squareup.moshi.Types
 import com.squareup.moshi.adapters.Rfc3339DateJsonAdapter
 import java.io.IOException
 import java.util.*
+import java.util.Collections.emptyList
 
 class PersistenceManager(private val context: Context) {
     private val sharedPreferences: SharedPreferences

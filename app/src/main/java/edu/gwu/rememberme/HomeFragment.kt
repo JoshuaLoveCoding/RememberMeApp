@@ -3,9 +3,12 @@ package edu.gwu.rememberme
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import kotlinx.android.synthetic.main.fragment_home.*
+import java.util.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -19,12 +22,30 @@ private const val ARG_PARAM2 = "param2"
  */
 class HomeFragment : Fragment() {
 
+    private lateinit var persistenceManager: PersistenceManager
+    private lateinit var remindersAdapter: RemindersAdapter
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        var view : View = inflater.inflate(R.layout.fragment_home, container, false)
+
+        persistenceManager = PersistenceManager(context!!)
+
+//        val reminderText = editTextReminder.text.toString()
+//        val reminder = Reminder(reminderText, Date())
+//        persistenceManager.saveReminder(reminder)
+
+        val reminders = persistenceManager.fetchReminders()
+
+        remindersAdapter = RemindersAdapter(reminders)
+
+//        recycler_view.adapter = remindersAdapter
+//        recycler_view.layoutManager = LinearLayoutManager(activity)
+
+        return view
     }
 
 
