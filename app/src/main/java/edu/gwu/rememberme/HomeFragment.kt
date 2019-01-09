@@ -35,8 +35,10 @@ class HomeFragment : Fragment() {
         persistenceManager = PersistenceManager(context!!)
 
 //        val reminderText = editTextReminder.text.toString()
-//        val reminder = Reminder(reminderText, Date())
-//        persistenceManager.saveReminder(reminder)
+//        if (reminderText != "") {
+//            val reminder = Reminder(reminderText, Date())
+//            persistenceManager.saveReminder(reminder)
+//        }
 
         val reminders = persistenceManager.fetchReminders()
 
