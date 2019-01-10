@@ -3,10 +3,10 @@ package edu.gwu.rememberme
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import kotlinx.android.synthetic.main.fragment_home.*
 import java.util.*
 
@@ -34,12 +34,6 @@ class HomeFragment : Fragment() {
 
         persistenceManager = PersistenceManager(context!!)
 
-//        val reminderText = editTextReminder.text.toString()
-//        if (reminderText != "") {
-//            val reminder = Reminder(reminderText, Date())
-//            persistenceManager.saveReminder(reminder)
-//        }
-
         val reminders = persistenceManager.fetchReminders()
 
         remindersAdapter = RemindersAdapter(reminders)
@@ -50,5 +44,14 @@ class HomeFragment : Fragment() {
         return view
     }
 
+    fun confirmButtonPressed(button: Button) {
+        button.setOnClickListener {
+            val reminderText = editTextReminder.text.toString()
+            if (reminderText != "") {
+                val reminder = Reminder(reminderText, Date())
+                persistenceManager.saveReminder(reminder)
+            }
+        }
+    }
 
 }
