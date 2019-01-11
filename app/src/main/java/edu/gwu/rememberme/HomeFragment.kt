@@ -3,6 +3,7 @@ package edu.gwu.rememberme
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,8 +39,8 @@ class HomeFragment : Fragment() {
 
         remindersAdapter = RemindersAdapter(reminders)
 
-//        recycler_view.adapter = remindersAdapter
-//        recycler_view.layoutManager = LinearLayoutManager(activity)
+        recycler_view.adapter = remindersAdapter
+        recycler_view.layoutManager = LinearLayoutManager(activity)
 
         return view
     }
